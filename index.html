@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+        <link rel="stylesheet" href="./styles/main.css" />
+
+        <title>Frontend Mentor | Interactive rating component</title>
+    </head>
+    <body>
+        <main class="main-container flex-center">
+            <!-- Rating state start -->
+            <div class="card">
+                <div class="submit-card" id="submit-card">
+                    <div class="submit-card-star-icon">
+                        <img src="./images/icon-star.svg" alt="" />
+                    </div>
+                    <h2 class="submit-card-title">How did we do?</h2>
+                    <p class="submit-card-message">
+                        Please let us know how we did with your support request.
+                        All feedback is appreciated to help us improve our
+                        offering!
+                    </p>
+                    <ul class="submit-card-rating">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                    </ul>
+                    <button class="submit-card-btn" id="btn-submit">
+                        SUBMIT
+                    </button>
+                </div>
+                <!-- Rating state end -->
+
+                <!-- Thank you state start -->
+                <div class="thankyou-card d-none" id="thankyou-card">
+                    <div class="thankyou-img flex-center">
+                        <img
+                            src="./images/illustration-thank-you.svg"
+                            alt="thank you"
+                        />
+                    </div>
+                    <p class="thankyou-card-rating">
+                        You selected
+                        <!-- Add rating here -->
+                        out of 5
+                    </p>
+                    <h2 class="thankyou-card-title">Thank you!</h2>
+                    <p class="thankyou-card-msg">
+                        We appreciate you taking the time to give a rating. If
+                        you ever need more support, don’t hesitate to get in
+                        touch!
+                    </p>
+                </div>
+            </div>
+            <!-- Thank you state end -->
+            <footer class="attribution">
+                Challenge by
+                <a
+                    href="https://www.frontendmentor.io?ref=challenge"
+                    target="_blank"
+                    >Frontend Mentor</a
+                >. Coded by <a href="#">oscarmumm</a>.
+            </footer>
+        </main>
+        <script src="./js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+/*------------------------------- GOOGLE FONTS 
+
+font-family: 'Overpass', sans-serif;
+
+*/
+
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+    --background: #202020;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+    font-family: "Overpass", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background: var(--background);
+    color: var(--White);
+}
+
+.d-none {
+  display: none;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.main-container {
+  min-height: 100vh;
+  position: relative;
+}
+
+.card {
+  max-width: 350px;
+  background: linear-gradient(
+    var(--Dark-Blue),
+    var(--Very-Dark-Blue)
+  );
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+.submit-card > * {
+  margin: 1rem 0;
+}
+
+.submit-card-star-icon {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--Dark-Blue);
+  
+}
+
+.submit-card-message {
+  color: var(--Medium-Grey);
+}
+
+.submit-card-rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 1.5rem 0;
+}
+
+.submit-card-rating li {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding: 1rem;
+  color: var(--Medium-Grey);
+  background: var(--Dark-Blue);
+  border-radius: 50%;
+}
+
+.submit-card-btn {
+  border-radius: 20px;
+  background: var(--Orange);
+  border: none;
+  padding: 1rem;
+  width: 100%;
+  color: var(--White);
+  font-weight: bold;
+  letter-spacing: .25rem;
+  cursor: pointer;
+}
+
+.thankyou-card {
+  text-align: center;
+}
+
+.thankyou-card > * {
+  margin: 1rem 0;
+}
+
+.thankyou-card-rating {
+  color: var(--Orange);
+  background: var(--Dark-Blue);
+  padding: .5rem 1.5rem;
+  border-radius: 20px;
+}
+
+.thankyou-card-msg {
+  color: var(--Light-Grey);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  padding: 1rem;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: var(--Light-Grey);
+    text-decoration: none;
+    font-weight: bold;
+}
