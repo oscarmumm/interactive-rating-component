@@ -29,16 +29,23 @@
                         All feedback is appreciated to help us improve our
                         offering!
                     </p>
-                    <ul class="submit-card-rating">
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                    </ul>
-                    <button class="submit-card-btn" id="btn-submit">
-                        SUBMIT
-                    </button>
+                    <form class="submit-card-rating">
+                        <div class="submit-card-rating-btns">
+                            <input class="rating-btn" type="radio" name="rating" id="rating-1" value="1">
+                            <label class="rating-label" for="rating-1">1</label>
+                            <input class="rating-btn" type="radio" name="rating" id="rating-2" value="2">
+                            <label class="rating-label" for="rating-2">2</label>
+                            <input class="rating-btn" type="radio" name="rating" id="rating-3" value="3">
+                            <label class="rating-label" for="rating-3">3</label>
+                            <input class="rating-btn" type="radio" name="rating" id="rating-4" value="4">
+                            <label class="rating-label" for="rating-4">4</label>
+                            <input class="rating-btn" type="radio" name="rating" id="rating-5" value="5" checked>
+                            <label class="rating-label" for="rating-5">5</label>
+                        </div>
+                        <button class="submit-card-btn" id="btn-submit">
+                            SUBMIT
+                        </button>
+                    </form>
                 </div>
                 <!-- Rating state end -->
 
@@ -52,7 +59,7 @@
                     </div>
                     <p class="thankyou-card-rating">
                         You selected
-                        <!-- Add rating here -->
+                        <span id="rating-span"></span>
                         out of 5
                     </p>
                     <h2 class="thankyou-card-title">Thank you!</h2>
